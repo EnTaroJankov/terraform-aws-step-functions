@@ -50,6 +50,18 @@ module "step_function" {
       events = true
     }
 
+    sagemaker_CreateTransformJob_Sync = {
+      events = true
+    }
+
+    emr_TerminateCluster = {
+      events = true
+    }
+
+    codebuild_StartBuild_Sync = {
+      events = true
+    }
+
     dynamodb = {
       dynamodb = ["arn:aws:dynamodb:eu-west-1:052212379155:table/Test"]
     }
